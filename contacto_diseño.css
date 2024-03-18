@@ -1,0 +1,187 @@
+header { 
+    background-color: #BBBBBB;
+    padding: 20px 0; /*20 px para margenes sup e inferior y 0 para laterales */
+}
+
+.caja{
+    width:940px; /*940 entre 1080 px como el 80%*/
+    position: relative;
+    margin: 0 auto; /* margin 0 para sup e inferior, auto calcula en automatico la resolucion porque no todos seran de 1200 px calcula mismo valor derecha e izquierda y da apariencia de centralizado*/
+}
+
+nav {
+    position: absolute;
+    top:110px;
+    right: 0px;
+
+
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /*margen hacia arriba, derecha, abajo, izquierda y poner px*/
+}
+
+nav a{
+    text-transform: uppercase; /*mayusculas en menu*/
+    color: #000000; /*color de letra*/
+    font-weight: bold; /*negritas*/
+    font-size: 22px; /*tamaño px junto al numero*/
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19; /*cambiar color al pasar el mouse*/
+    text-decoration: underline; /*subrrayado*/
+}
+
+.productos{
+    width: 940px; /*ancho en pixeles*/
+    margin: 0 auto; /*margen sup-inf, y laterales en auto (centrado)*/
+    padding: 50px; /*margen superior*/
+}
+.productos li{
+    display: inline-block; /*divide la lista en bloques horizontales*/
+    text-align:center; /*alienacion del texto*/
+    width: 30%; /*distribuir el espacio de las cajas, no hay un tercio, pero si 30%*/
+    vertical-align: top; /*alineacion vertical desde arriba*/
+    background: #ffffff; /*para hacerlo más visual, cambiar f por #cccccc*/
+    margin: 0 1.5%; /*vertical=0, laterales=1.5%*/
+    padding: 30px 20px; /*px en la vertical, en la horizontal*/
+    box-sizing: border-box;
+    border: 2px solid #000000; 
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid; /*border-top: 10px; borderstyle: dotted, slash (en modo desarrollador)*/
+    border-radius: 10px; /*(del izquierdo en orden sentido reloj) border-top-left-radius, border-bottom-right-radius, etc*/
+}
+
+.productos li:hover{ /*cambia propiedades al pasar el mouse*/
+    border-color: #c78c19;
+    /*font-size: 33px; pero le da preferencia a h2, se traslada como en la linea 73*/    
+}
+
+.productos li:active{ /*cambia propiedades al dar click*/
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.Producto-descripcion {
+    font-size: 18px;
+}
+
+.Producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg); /*copia la imagen varias veces en la horizontal*/
+    padding:40px;
+}
+
+.copyright{
+    color:#ffffff;
+    font-size:13px;
+    margin:20px;
+    /*unicode-table.com se usa más el simpobolo entidad y colocarlo en 
+    el codigo html &copy*/
+}
+/*text decoration como subrayado viene por defecto, igual que el margen superior en chrome*/
+
+/*posiciones, static, relative y absolute*/
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{  /*se puede aplicar el mismo estilo separado por una coma para label y p por ejemplo o abajo para input y textarea*/ 
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+/*form input, form textarea*/ /*para que no se aplique en todo se creó una clase y ahora se usa el selector de clase .input*/
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0; /*20 en vertical y 0 en horizontal*/
+}
+
+
+form legend{
+    color:red; /*jearquia de formato menos prioridad*/
+}
+
+p{
+    color:blue;
+}
+
+.test{
+    color:yellow;
+}
+
+p.test{
+    color:orange;
+}
+
+#test{
+    color:pink;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: darkblue;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*cambiar all por background*/
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: blueviolet;
+    transform: scale(1.2);
+    /*transform: rotate(70deg); CSS se va por la ultima propiedad ya no cambia el tamaño
+    se puede usar transform: scale(3) rotate(800deg);*/
+}
+
+table{ /*selector table*/
+    margin: 40px 40px;
+
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css"> <! -- archivo creado para eliminar el formato por default de chrome-->
+        <link rel="stylesheet" href="contacto_diseño.css"> <! -- referencias al archivo con los parametros de diseño-->
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img src="imagenes/logo.png" alt="Logo de la Barbería Alura"> <! -- referencia al logo y alt como descricion de la imagen--></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li> <! --etiqueta crea vinculos anchor es una "a"-->
+                        <li><a href="barberia_menu.html">Productos</a></li>
+                        <li><a href="https//google.com">Contacto</a></li>
+                        <li><a href=https://www.google.com>Google</a></li>
+                     </ul>
+                 </nav>
+             </div>
+        </header>
+        <main> 
+            <form>
+                <label for="nombreApellido"> Nombre y Apellido</label> <! -- la lable acompaña al input siempre -->
+                <input type="text" id="nombreApellido" class="input-padron" required> <! --caja para rentradas de usario -->
+
+                <label for="correoelectronico"> Correo Electrónico</label> <! -- la lable acompaña al input siempre -->
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com"> <! --caja para rentradas de usario -->
+                
+
+                <label for="telefono"> Teléfono</label> <! -- la lable acompaña al input siempre -->
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX)XXXX-XXXX"> <! --caja para rentradas de usario -->
+            
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                
+                <fieldset> <! -- es como div pero agrupa datos que van juntos y en vez de p se usa legend -->
+                    <legend class="test" id="test" style="color: purple" > ¿Cómo le gustaría que lo contactemos?</legend>
+               
+                    <label for="radio-email">Email</label><! --se crea un salto y la bolita aparece despues, apra que quede antes ver los siguientes ej. -->
+                    <input type="radio" name="contacto" value="email" id="radio-email"> <! --la propiedad name solo puede completarse una vez, la bolita queda separada por la propiedad block del CSS -->
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label><! --se crea un salto y la bolita aparece despues, apra que quede antes ver los siguientes ej. -->
+                    
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                  
+
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+
+                    </fieldset>
+
+                <difieldset>
+                    <legend>¿En qué horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Día</td>
+                         <td>Horario</td>
+                    </tr>
+                 </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </main>
+        <footer>
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyright"> &copy Copyright Barberia Alura-2024</p>
+        </footer>
+        </body>
+</html>
